@@ -9,7 +9,7 @@ import { DarkModeContext } from "./DarkModeContext";
 
 function App() {
   const { followers, overview } = data;
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
       <div className="App" data-darkmode={darkMode}>
