@@ -1,3 +1,5 @@
+import { platformIconUrl } from "./data";
+
 export default function FollowerCard({ followerData }) {
     const { platform, username, number, update } = followerData;
     const platformBorderClass = {
@@ -14,7 +16,10 @@ export default function FollowerCard({ followerData }) {
 
     return (
         <div className={`follower-card ${platformBorderClass[platform]}`}>
-            <h3>{username}</h3>
+            <div className="username">
+                <img src={platformIconUrl[platform]} alt={platform} />
+                <h3 className="text-bold">{username}</h3>
+            </div>
             <div>
                 <div className='text-2xl' style={{ marginBottom: "1rem" }}>
                     {number}

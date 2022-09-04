@@ -1,12 +1,9 @@
+import { platformIconUrl } from "./data";
+
 export default function OverviewCard({ overviewData }) {
     const { platform, label, number, increase } = overviewData;
 
-    const platformIconUrl = {
-        "facebook": "/images/icon-facebook.svg",
-        "twitter": "/images/icon-twitter.svg",
-        "instagram": "/images/icon-instagram.svg",
-        "youtube": "/images/icon-youtube.svg",
-    }
+
     return (
         <div className="overview-card">
             <div className="text-label overview-label">{label}</div>

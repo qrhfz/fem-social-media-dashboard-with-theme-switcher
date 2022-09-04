@@ -76,3 +76,10 @@ export const data = {
         },
     ],
 }
+
+export const platformIconUrl = {
+    "facebook": "/images/icon-facebook.svg",
+    "twitter": "/images/icon-twitter.svg",
+    "instagram": "/images/icon-instagram.svg",
+    "youtube": "/images/icon-youtube.svg",
+}

@@ -1,4 +1,4 @@
-import OverviewCard from '../OverviewCard';
+import OverviewCard from './OverviewCard';
 import './App.css'
 import AppHeader from './AppHeader'
 import { data } from './data'
